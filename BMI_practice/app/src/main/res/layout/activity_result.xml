@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/bmi_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI 수치 : "/>
+
+    <TextView
+        android:id="@+id/bmi_number"
+        app:layout_constraintStart_toEndOf="@+id/bmi_textview"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0000"/>
+
+    <TextView
+        android:id="@+id/result_textView"
+        app:layout_constraintTop_toBottomOf="@+id/bmi_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결과 : "/>
+
+    <TextView
+        android:id="@+id/bmi_result"
+        app:layout_constraintStart_toEndOf="@+id/result_textView"
+        app:layout_constraintTop_toBottomOf="@id/bmi_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="어쩌구"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
